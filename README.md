@@ -80,7 +80,7 @@ linux-audit-script/
 ## Usage
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/linux-audit-script.git
+   git clone https://github.com/ethic-bakeery/linux-audit-script.git
    cd linux-audit-script
    ```
 2. Give execution permission to the main script:
