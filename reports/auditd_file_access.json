@@ -1,0 +1,15 @@
+{
+  "auditd_file_access": [
+    {"check": "Ensure audit log directory is 0750 or more restrictive", "status": "passed", "recommendation": ""},
+    {"check": "Ensure audit log files are mode 0640 or more restrictive", "status": "passed", "recommendation": ""},
+    {"check": "Ensure audit log files are mode 0600 or more restrictive", "status": "failed", "recommendation": "Set permissions using: chmod 600 /var/log/audit/audit.log"},
+    {"check": "Ensure only authorized users own audit log files", "status": "passed", "recommendation": ""},
+    {"check": "Ensure only authorized groups own audit log files", "status": "failed", "recommendation": "Change group using: chgrp root /var/log/audit/audit.log"},
+    {"check": "Ensure audit configuration files are 640 or more restrictive", "status": "passed", "recommendation": ""},
+    {"check": "Ensure only authorized users own audit configuration files", "status": "passed", "recommendation": ""},
+    {"check": "Ensure only authorized groups own audit configuration files", "status": "passed", "recommendation": ""},
+    {"check": "Ensure audit tools are 755 or more restrictive", "status": "passed", "recommendation": ""},
+    {"check": "Ensure only authorized users own audit tools", "status": "passed", "recommendation": ""},
+    {"check": "Ensure only authorized groups own audit tools", "status": "passed", "recommendation": ""}
+  ]
+}

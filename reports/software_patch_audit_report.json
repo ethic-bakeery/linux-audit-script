@@ -1,0 +1,14 @@
+{
+  "software_patch": [
+    {
+      "check": "Ensure APT requires a recognized digital signature before installation",
+      "status": "failed",
+      "recommendation": "Run 'echo Acquire::AllowUnauthenticated \"false\"; > /etc/apt/apt.conf.d/00secure' to enforce signature verification."
+    },
+    {
+      "check": "Ensure APT removes outdated software components",
+      "status": "failed",
+      "recommendation": "Run 'echo APT::Periodic::Autoremove \"1\"; > /etc/apt/apt.conf.d/10periodic' to enable automatic removal."
+    }
+  ]
+}

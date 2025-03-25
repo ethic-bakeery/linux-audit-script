@@ -1,0 +1,10 @@
+{
+  "generated_on": "Mon Mar 17 11:30:09 PM IST 2025",
+  "audit_results": {
+    "mandatory_access_control": [
+      {"check": "AppArmor Installed", "status": "passed", "recommendation": "None" },
+      {"check": "AppArmor Enabled in Bootloader", "status": "failed", "recommendation": "Add 'apparmor=1 security=apparmor' to GRUB_CMDLINE_LINUX in /etc/default/grub and run 'sudo update-grub'." },
+      {"check": "AppArmor Profiles Enforcing", "status": "passed", "recommendation": "None" }
+    ]
+  }
+}

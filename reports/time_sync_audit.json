@@ -1,0 +1,14 @@
+{
+  "time_sync_audit": [
+    {
+      "check": "Ensure time synchronization is in use",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "Ensure a single time synchronization daemon is in use",
+      "status": "failed",
+      "recommendation": "Start a time synchronization service (e.g., 'systemctl enable --now systemd-timesyncd')."
+    }
+  ]
+}

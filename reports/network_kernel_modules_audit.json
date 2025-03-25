@@ -1,0 +1,24 @@
+{
+  "network_kernel_modules_audit": [
+    {
+      "check": "Ensure dccp kernel module is not loaded",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "Ensure sctp kernel module is not loaded",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "Ensure rds kernel module is not loaded",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "Ensure tipc kernel module is not loaded",
+      "status": "passed",
+      "recommendation": ""
+    }
+  ]
+}

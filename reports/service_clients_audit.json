@@ -1,0 +1,39 @@
+{
+  "service_clients_audit": [
+    {
+      "service": "nis",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "service": "rsh-client",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "service": "talk",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "service": "telnet",
+      "status": "failed",
+      "recommendation": "Remove with 'apt remove --purge telnet -y' and disable it using 'systemctl disable telnet'."
+    },
+    {
+      "service": "ldap-utils",
+      "status": "failed",
+      "recommendation": "Remove with 'apt remove --purge ldap-utils -y' and disable it using 'systemctl disable ldap-utils'."
+    },
+    {
+      "service": "rpcbind",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "Ensure nonessential services are removed or masked",
+      "status": "manual",
+      "recommendation": "Review all running services using 'systemctl list-units --type=service' and mask any unnecessary services using 'systemctl mask <service>'."
+    }
+  ]
+}

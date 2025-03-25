@@ -1,0 +1,35 @@
+{
+  "system_maintenance": [
+    {"check": "Ensure permissions on /etc/passwd are configured", "status": "passed", "recommendation": ""},
+    {"check": "Ensure permissions on /etc/passwd- are configured", "status": "failed", "recommendation": "Set correct permissions using: chmod 600 /etc/passwd-"},
+    {"check": "Ensure permissions on /etc/group are configured", "status": "passed", "recommendation": ""},
+    {"check": "Ensure permissions on /etc/group- are configured", "status": "failed", "recommendation": "Set correct permissions using: chmod 600 /etc/group-"},
+    {"check": "Ensure permissions on /etc/shadow are configured", "status": "failed", "recommendation": "Set correct permissions using: chmod 600 /etc/shadow"},
+    {"check": "Ensure permissions on /etc/shadow- are configured", "status": "failed", "recommendation": "Set correct permissions using: chmod 600 /etc/shadow-"},
+    {"check": "Ensure permissions on /etc/gshadow are configured", "status": "failed", "recommendation": "Set correct permissions using: chmod 600 /etc/gshadow"},
+    {"check": "Ensure permissions on /etc/gshadow- are configured", "status": "failed", "recommendation": "Set correct permissions using: chmod 600 /etc/gshadow-"},
+    {"check": "Ensure permissions on /etc/shells are configured", "status": "passed", "recommendation": ""},
+    {"check": "Ensure permissions on /etc/opasswd are configured", "status": "failed", "recommendation": "File /etc/opasswd does not exist. Investigate missing system files."},
+    {
+      "check": "Ensure world writable files and directories are secured",
+      "status": "manual",
+      "recommendation": "Manually review world writable files using: find / -xdev -type d -perm -0002"
+    },
+    {
+      "check": "Ensure no unowned or ungrouped files or directories exist",
+      "status": "manual",
+      "recommendation": "Find and fix unowned files using: find / -xdev \( -nouser -o -nogroup \)"
+    },
+    {
+      "check": "Ensure SUID and SGID files are reviewed",
+      "status": "manual",
+      "recommendation": "Review SUID/SGID files using: find / -xdev -type f \( -perm -4000 -o -perm -2000 \)"
+    },
+    {"check": "Ensure system command files are owned by root", "status": "passed", "recommendation": ""},
+    {"check": "Ensure system library directories are owned by root", "status": "passed", "recommendation": ""},
+    {"check": "Ensure system library files are owned by root", "status": "passed", "recommendation": ""},
+    {"check": "Ensure directories that contain system commands are 0755 or more restrictive", "status": "passed", "recommendation": ""},
+    {"check": "Ensure system library directories are 0755 or more restrictive", "status": "passed", "recommendation": ""},
+    {"check": "Ensure system library files are 0755 or more restrictive", "status": "passed", "recommendation": ""}
+  ]
+}

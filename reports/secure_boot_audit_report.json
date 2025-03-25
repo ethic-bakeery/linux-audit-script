@@ -1,0 +1,19 @@
+{
+  "secure_boot_settings": [
+    {
+      "check": "Bootloader Password",
+      "status": "failed",
+      "recommendation": "Set a GRUB password using 'grub-mkpasswd-pbkdf2' and update /etc/grub.d/00_header."
+    },
+    {
+      "check": "Bootloader Config Permissions",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "Single-User Mode Authentication",
+      "status": "failed",
+      "recommendation": "Add 'SULOGIN=yes' to /etc/default/grub and update GRUB using 'sudo update-grub'."
+    }
+  ]
+}

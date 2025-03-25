@@ -1,0 +1,24 @@
+{
+  "ssh_server_audit": [
+    {
+      "check": "Ensure SSH is installed and active",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "Ensure permissions on /etc/ssh/sshd_config are configured",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "Ensure SSH root login is disabled",
+      "status": "failed",
+      "recommendation": "Set PermitRootLogin no in /etc/ssh/sshd_config."
+    },
+    {
+      "check": "Ensure SSH PAM is enabled",
+      "status": "passed",
+      "recommendation": ""
+    }
+  ]
+}

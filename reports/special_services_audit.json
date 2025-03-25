@@ -1,0 +1,99 @@
+{
+  "special_services_audit": [
+    {
+      "service": "xserver-xorg*",
+      "status": "failed",
+      "recommendation": "Remove with 'apt remove --purge xserver-xorg* -y' and disable it using 'systemctl disable xserver-xorg*'."
+    },
+    {
+      "service": "avahi-daemon",
+      "status": "failed",
+      "recommendation": "Remove with 'apt remove --purge avahi-daemon -y' and disable it using 'systemctl disable avahi-daemon'."
+    },
+    {
+      "service": "cups",
+      "status": "failed",
+      "recommendation": "Remove with 'apt remove --purge cups -y' and disable it using 'systemctl disable cups'."
+    },
+    {
+      "service": "isc-dhcp-server",
+      "status": "passed",
+      "recommendation": "None"
+    },
+    {
+      "service": "slapd",
+      "status": "passed",
+      "recommendation": "None"
+    },
+    {
+      "service": "nfs-kernel-server",
+      "status": "passed",
+      "recommendation": "None"
+    },
+    {
+      "service": "bind9",
+      "status": "failed",
+      "recommendation": "Remove with 'apt remove --purge bind9 -y' and disable it using 'systemctl disable bind9'."
+    },
+    {
+      "service": "vsftpd",
+      "status": "failed",
+      "recommendation": "Remove with 'apt remove --purge vsftpd -y' and disable it using 'systemctl disable vsftpd'."
+    },
+    {
+      "service": "apache2",
+      "status": "failed",
+      "recommendation": "Remove with 'apt remove --purge apache2 -y' and disable it using 'systemctl disable apache2'."
+    },
+    {
+      "service": "dovecot-core",
+      "status": "passed",
+      "recommendation": "None"
+    },
+    {
+      "service": "samba",
+      "status": "failed",
+      "recommendation": "Remove with 'apt remove --purge samba -y' and disable it using 'systemctl disable samba'."
+    },
+    {
+      "service": "squid",
+      "status": "passed",
+      "recommendation": "None"
+    },
+    {
+      "service": "snmpd",
+      "status": "passed",
+      "recommendation": "None"
+    },
+    {
+      "service": "nis",
+      "status": "passed",
+      "recommendation": "None"
+    },
+    {
+      "service": "dnsmasq",
+      "status": "failed",
+      "recommendation": "Remove with 'apt remove --purge dnsmasq -y' and disable it using 'systemctl disable dnsmasq'."
+    },
+    {
+      "service": "telnetd",
+      "status": "passed",
+      "recommendation": "None"
+    },
+    {
+      "service": "rsh-server",
+      "status": "passed",
+      "recommendation": "None"
+    },
+    {
+      "check": "Ensure mail transfer agent is configured for local-only mode",
+      "status": "failed",
+      "recommendation": "Set 'inet_interfaces = loopback-only' in '/etc/postfix/main.cf' and restart Postfix."
+    },
+    {
+      "check": "Ensure rsync is either not installed or is masked",
+      "status": "failed",
+      "recommendation": "Mask rsync using 'systemctl mask rsync' or remove it using 'apt remove --purge rsync -y'."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "pam_pkcs11_audit": [
+    { "check": "Ensure libpam-pkcs11 package is installed", "status": "not installed" },
+    { "check": "Ensure opensc-pkcs11 package is installed", "status": "not installed" },
+    {"check": "Ensure pam_pkcs11 configuration file exists", "status": "failed", "recommendation": "Configuration file missing. If using smart card authentication, ensure /etc/pam_pkcs11/pam_pkcs11.conf is configured."},
+    {"check": "Ensure PKCS#11 user/group mappings are configured", "status": "skipped", "recommendation": "Configuration file missing."}
+  ]
+}

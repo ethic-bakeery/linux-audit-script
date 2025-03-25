@@ -1,0 +1,14 @@
+{
+  "logging_audit": [
+    { "check": "Ensure systemd-journal-remote is installed", "status": "not installed" },
+    { "check": "Ensure journald service is enabled", "status": "enabled" },
+    {"check": "Ensure journald is not configured to receive logs from a remote client", "status": "passed", "recommendation": ""},
+    {"check": "Ensure journald is configured to compress large log files", "status": "failed", "recommendation": "Enable log compression by adding 'Compress=yes' in /etc/systemd/journald.conf."},
+    {"check": "Ensure journald is configured to write logfiles to persistent disk", "status": "failed", "recommendation": "Ensure journald writes logs to persistent storage by setting 'Storage=persistent' in /etc/systemd/journald.conf."},
+    { "check": "Ensure systemd-journal-remote is configured", "status": "manual", "recommendation": "Verify systemd-journal-remote configuration in /etc/systemd/journal-remote.conf." },
+    { "check": "Ensure systemd-journal-remote is enabled", "status": "manual", "recommendation": "Check if systemd-journal-remote is enabled using systemctl." },
+    { "check": "Ensure journald is not configured to send logs to rsyslog", "status": "manual", "recommendation": "Verify ForwardToSyslog setting in /etc/systemd/journald.conf." },
+    { "check": "Ensure journald log rotation is configured per site policy", "status": "manual", "recommendation": "Ensure log rotation settings in /etc/systemd/journald.conf follow site requirements." },
+    { "check": "Ensure journald default file permissions are configured", "status": "manual", "recommendation": "Review /etc/systemd/journald.conf and set appropriate file permissions." }
+  ]
+}

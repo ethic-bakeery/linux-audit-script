@@ -1,0 +1,19 @@
+{
+  "chrony_audit": [
+    {
+      "check": "Ensure Chrony is enabled and running",
+      "status": "failed",
+      "recommendation": "Enable Chrony using 'systemctl enable --now chronyd'."
+    },
+    {
+      "check": "Ensure Chrony is running as user _chrony",
+      "status": "failed",
+      "recommendation": "Ensure Chrony runs as '_chrony' by checking '/etc/systemd/system/chronyd.service'."
+    },
+    {
+      "check": "Ensure Chrony is configured with authorized timeserver",
+      "status": "manual",
+      "recommendation": "Verify that Chrony uses authorized time servers by checking '/etc/chrony/chrony.conf'. Ensure it contains valid 'server' or 'pool' entries."
+    }
+  ]
+}

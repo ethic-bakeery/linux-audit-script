@@ -1,0 +1,34 @@
+{
+  "privilege_escalation_audit": [
+    {
+      "check": "Ensure sudo is installed",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "Ensure sudo commands use pty",
+      "status": "failed",
+      "recommendation": "Add Defaults requiretty to /etc/sudoers."
+    },
+    {
+      "check": "Ensure sudo log file exists",
+      "status": "failed",
+      "recommendation": "Configure sudo logging in /etc/sudoers with Defaults logfile=/var/log/sudo.log."
+    },
+    {
+      "check": "Ensure users must provide password for privilege escalation",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "Ensure sudo authentication timeout is configured correctly",
+      "status": "failed",
+      "recommendation": "Set Defaults timestamp_timeout=<value> in /etc/sudoers."
+    },
+    {
+      "check": "Ensure access to the su command is restricted",
+      "status": "failed",
+      "recommendation": "Ensure su access is restricted to wheel group using pam_wheel.so."
+    }
+  ]
+}

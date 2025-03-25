@@ -1,0 +1,9 @@
+{
+  "fips_audit": [
+    {
+      "check": "Ensure FIPS mode is enabled",
+      "status": "failed",
+      "recommendation": "Enable FIPS mode using 'sudo fips-mode-setup --enable' and reboot the system."
+    }
+  ]
+}

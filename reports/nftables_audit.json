@@ -1,0 +1,24 @@
+{
+  "nftables_audit": [
+    {
+      "check": "Ensure nftables is installed",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "Ensure UFW is uninstalled or disabled with nftables",
+      "status": "failed",
+      "recommendation": "Disable UFW using 'systemctl stop ufw && systemctl disable ufw'."
+    },
+    {
+      "check": "Ensure nftables base chains exist",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "Ensure nftables service is enabled",
+      "status": "failed",
+      "recommendation": "Enable nftables using 'systemctl enable --now nftables'."
+    }
+  ]
+}

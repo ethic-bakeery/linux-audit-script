@@ -1,0 +1,5 @@
+{
+  "gdm_security_audit": [
+    {"check": "Ensure GNOME Display Manager is removed", "status": "failed", "recommendation": "Remove GDM using 'sudo apt purge gdm3 -y'."},{"check": "Ensure GDM login banner is configured", "status": "failed", "recommendation": "Set 'banner-message-enable=true' in /etc/gdm3/custom.conf."},{"check": "Ensure GDM disable-user-list option is enabled", "status": "failed", "recommendation": "Set 'disable-user-list=true' in /etc/gdm3/custom.conf."}
+  ]
+}

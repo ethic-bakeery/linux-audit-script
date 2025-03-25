@@ -1,0 +1,14 @@
+{
+  "timesyncd_audit": [
+    {
+      "check": "Ensure systemd-timesyncd is enabled and running",
+      "status": "manual",
+      "recommendation": "Verify systemd-timesyncd is enabled and running using 'systemctl status systemd-timesyncd'. If not, enable it with 'systemctl enable --now systemd-timesyncd'."
+    },
+    {
+      "check": "Ensure systemd-timesyncd is configured with authorized timeserver",
+      "status": "failed",
+      "recommendation": "Edit '/etc/systemd/timesyncd.conf' to specify an authorized timeserver under the 'NTP=' directive and restart the service."
+    }
+  ]
+}

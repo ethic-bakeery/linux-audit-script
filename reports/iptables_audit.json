@@ -1,0 +1,24 @@
+{
+  "iptables_audit": [
+    {
+      "check": "Ensure iptables packages are installed",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "Ensure nftables is not installed with iptables",
+      "status": "failed",
+      "recommendation": "Remove nftables using 'apt remove nftables -y'."
+    },
+    {
+      "check": "Ensure iptables default deny firewall policy",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "Ensure iptables loopback traffic is configured",
+      "status": "failed",
+      "recommendation": "Allow loopback using 'iptables -A INPUT -i lo -j ACCEPT'."
+    }
+  ]
+}

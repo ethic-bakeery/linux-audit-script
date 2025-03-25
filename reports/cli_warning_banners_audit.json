@@ -1,0 +1,37 @@
+{
+  "generated_on": "2025-03-13T09:13:14Z",
+  "audit_results": {
+    "cli_warning_banners": [
+      {
+        "check": "Ensure message of the day is configured properly",
+        "status": "failed",
+        "recommendation": "Configure /etc/motd with an appropriate message using 'echo \"Your Warning Message\" | sudo tee /etc/motd'."
+      },
+      {
+        "check": "Ensure local login warning banner is configured properly",
+        "status": "passed",
+        "recommendation": ""
+      },
+      {
+        "check": "Ensure remote login warning banner is configured properly",
+        "status": "passed",
+        "recommendation": ""
+      },
+      {
+        "check": "Ensure permissions on /etc/motd are configured",
+        "status": "failed",
+        "recommendation": "/etc/motd file not found."
+      },
+      {
+        "check": "Ensure permissions on /etc/issue are configured",
+        "status": "passed",
+        "recommendation": ""
+      },
+      {
+        "check": "Ensure permissions on /etc/issue.net are configured",
+        "status": "passed",
+        "recommendation": ""
+      }
+    ]
+  }
+}

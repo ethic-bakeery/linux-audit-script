@@ -1,0 +1,14 @@
+{
+  "additional_software_audit": [
+    {
+      "check": "Ensure vlock is installed",
+      "status": "failed",
+      "recommendation": "Install vlock using 'sudo apt install vlock'."
+    },
+    {
+      "check": "Ensure its installed",
+      "status": "failed",
+      "recommendation": "Install Endpoint Threat Prevention from McAfee/Trellix."
+    }
+  ]
+}

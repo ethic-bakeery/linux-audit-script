@@ -1,0 +1,14 @@
+{
+  "log_file_access_audit": [
+    {"check": "Ensure /var/log is owned by root", "status": "passed", "recommendation": ""},
+    {"check": "Ensure /var/log is group-owned by syslog", "status": "passed", "recommendation": ""},
+    {"check": "Ensure /var/log has mode 0755 or more restrictive", "status": "failed", "recommendation": "Run: chmod 0755 /var/log"},
+    {"check": "Ensure /var/log/syslog is owned by syslog", "status": "passed", "recommendation": ""},
+    {"check": "Ensure /var/log/syslog is group-owned by adm", "status": "passed", "recommendation": ""},
+    {"check": "Ensure /var/log/syslog has mode 0640 or more restrictive", "status": "failed", "recommendation": "Run: chmod 0640 /var/log/syslog"},
+    {"check": "Ensure auditd is installed", "status": "passed", "recommendation": ""},
+    {"check": "Ensure auditd service is enabled and active", "status": "passed", "recommendation": ""},
+    {"check": "Ensure auditing for processes that start prior to auditd is enabled", "status": "failed", "recommendation": "Edit /etc/default/grub and add 'audit=1' to GRUB_CMDLINE_LINUX, then run: update-grub && reboot"},
+    {"check": "Ensure audit_backlog_limit is sufficient", "status": "failed", "recommendation": "Edit /etc/default/grub and add 'audit_backlog_limit=8192' to GRUB_CMDLINE_LINUX, then run: update-grub && reboot"}
+  ]
+}

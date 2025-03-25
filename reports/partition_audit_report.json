@@ -1,0 +1,134 @@
+{
+  "partition_audit": [
+    {
+      "check": "Ensure /tmp is on a separate partition",
+      "status": "failed",
+      "recommendation": "Update /etc/fstab to mount /tmp on a separate partition."
+    },
+    {
+      "check": "Ensure nodev option is set on /tmp",
+      "status": "failed",
+      "recommendation": "Add 'nodev' to the mount options in /etc/fstab for /tmp."
+    },
+    {
+      "check": "Ensure nosuid option is set on /tmp",
+      "status": "failed",
+      "recommendation": "Add 'nosuid' to the mount options in /etc/fstab for /tmp."
+    },
+    {
+      "check": "Ensure noexec option is set on /tmp",
+      "status": "failed",
+      "recommendation": "Add 'noexec' to the mount options in /etc/fstab for /tmp."
+    },
+    {
+      "check": "Ensure /dev/shm is on a separate partition",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "Ensure nodev option is set on /dev/shm",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "Ensure nosuid option is set on /dev/shm",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "Ensure noexec option is set on /dev/shm",
+      "status": "failed",
+      "recommendation": "Add 'noexec' to the mount options in /etc/fstab for /dev/shm."
+    },
+    {
+      "check": "Ensure /home is on a separate partition",
+      "status": "failed",
+      "recommendation": "Update /etc/fstab to mount /home on a separate partition."
+    },
+    {
+      "check": "Ensure nodev option is set on /home",
+      "status": "failed",
+      "recommendation": "Add 'nodev' to the mount options in /etc/fstab for /home."
+    },
+    {
+      "check": "Ensure nosuid option is set on /home",
+      "status": "failed",
+      "recommendation": "Add 'nosuid' to the mount options in /etc/fstab for /home."
+    },
+    {
+      "check": "Ensure /var is on a separate partition",
+      "status": "failed",
+      "recommendation": "Update /etc/fstab to mount /var on a separate partition."
+    },
+    {
+      "check": "Ensure nodev option is set on /var",
+      "status": "failed",
+      "recommendation": "Add 'nodev' to the mount options in /etc/fstab for /var."
+    },
+    {
+      "check": "Ensure nosuid option is set on /var",
+      "status": "failed",
+      "recommendation": "Add 'nosuid' to the mount options in /etc/fstab for /var."
+    },
+    {
+      "check": "Ensure /var/tmp is on a separate partition",
+      "status": "failed",
+      "recommendation": "Update /etc/fstab to mount /var/tmp on a separate partition."
+    },
+    {
+      "check": "Ensure nodev option is set on /var/tmp",
+      "status": "failed",
+      "recommendation": "Add 'nodev' to the mount options in /etc/fstab for /var/tmp."
+    },
+    {
+      "check": "Ensure nosuid option is set on /var/tmp",
+      "status": "failed",
+      "recommendation": "Add 'nosuid' to the mount options in /etc/fstab for /var/tmp."
+    },
+    {
+      "check": "Ensure noexec option is set on /var/tmp",
+      "status": "failed",
+      "recommendation": "Add 'noexec' to the mount options in /etc/fstab for /var/tmp."
+    },
+    {
+      "check": "Ensure /var/log is on a separate partition",
+      "status": "failed",
+      "recommendation": "Update /etc/fstab to mount /var/log on a separate partition."
+    },
+    {
+      "check": "Ensure nodev option is set on /var/log",
+      "status": "failed",
+      "recommendation": "Add 'nodev' to the mount options in /etc/fstab for /var/log."
+    },
+    {
+      "check": "Ensure nosuid option is set on /var/log",
+      "status": "failed",
+      "recommendation": "Add 'nosuid' to the mount options in /etc/fstab for /var/log."
+    },
+    {
+      "check": "Ensure noexec option is set on /var/log",
+      "status": "failed",
+      "recommendation": "Add 'noexec' to the mount options in /etc/fstab for /var/log."
+    },
+    {
+      "check": "Ensure /var/log/audit is on a separate partition",
+      "status": "failed",
+      "recommendation": "Update /etc/fstab to mount /var/log/audit on a separate partition."
+    },
+    {
+      "check": "Ensure nodev option is set on /var/log/audit",
+      "status": "failed",
+      "recommendation": "Add 'nodev' to the mount options in /etc/fstab for /var/log/audit."
+    },
+    {
+      "check": "Ensure nosuid option is set on /var/log/audit",
+      "status": "failed",
+      "recommendation": "Add 'nosuid' to the mount options in /etc/fstab for /var/log/audit."
+    },
+    {
+      "check": "Ensure noexec option is set on /var/log/audit",
+      "status": "failed",
+      "recommendation": "Add 'noexec' to the mount options in /etc/fstab for /var/log/audit."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "network_kernel_parameters_audit": [
+    {
+      "check": "net.ipv4.ip_forward",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "net.ipv4.conf.all.send_redirects",
+      "status": "failed",
+      "recommendation": "Set 'net.ipv4.conf.all.send_redirects=0' in /etc/sysctl.conf and reload using 'sysctl -p'."
+    },
+    {
+      "check": "net.ipv4.icmp_ignore_bogus_error_responses",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "net.ipv4.icmp_echo_ignore_broadcasts",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "net.ipv4.conf.all.accept_redirects",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "net.ipv4.conf.all.secure_redirects",
+      "status": "failed",
+      "recommendation": "Set 'net.ipv4.conf.all.secure_redirects=0' in /etc/sysctl.conf and reload using 'sysctl -p'."
+    },
+    {
+      "check": "net.ipv4.conf.all.rp_filter",
+      "status": "failed",
+      "recommendation": "Set 'net.ipv4.conf.all.rp_filter=1' in /etc/sysctl.conf and reload using 'sysctl -p'."
+    },
+    {
+      "check": "net.ipv4.tcp_syncookies",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "net.ipv4.conf.all.accept_source_route",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "net.ipv4.conf.all.log_martians",
+      "status": "failed",
+      "recommendation": "Set 'net.ipv4.conf.all.log_martians=1' in /etc/sysctl.conf and reload using 'sysctl -p'."
+    },
+    {
+      "check": "net.ipv6.conf.all.accept_ra",
+      "status": "failed",
+      "recommendation": "Set 'net.ipv6.conf.all.accept_ra=0' in /etc/sysctl.conf and reload using 'sysctl -p'."
+    }
+  ]
+}

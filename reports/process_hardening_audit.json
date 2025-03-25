@@ -1,0 +1,34 @@
+{
+  "audit_results": [
+    {
+        "check_name": "Ensure ASLR is enabled",
+        "status": "Passed"
+    },
+    {
+        "check_name": "Ensure ptrace_scope is restricted",
+        "status": "Passed"
+    },
+    {
+        "check_name": "Ensure prelink is not installed",
+        "status": "Passed"
+    },
+    ,
+    {
+        "check_name": "Ensure automatic error reporting is disabled",
+        "status": "Failed"
+    ,"recommendation": "Disable error reporting using: systemctl disable apport }} systemctl stop apport"},
+    {
+        "check_name": "Ensure kdump service is disabled",
+        "status": "Passed"
+    },
+    ,
+    {
+        "check_name": "Ensure Ctrl-Alt-Delete is disabled",
+        "status": "Passed"
+    },
+    {
+        "check_name": "Ensure dmesg_restrict is enabled",
+        "status": "Passed"
+    }
+  ]
+}

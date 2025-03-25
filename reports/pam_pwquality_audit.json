@@ -1,0 +1,44 @@
+{
+  "pam_pwquality_audit": [
+    {
+      "check": "Ensure password is at least 15 characters",
+      "status": "failed",
+      "recommendation": "Configure 'minlen' in /etc/security/pwquality.conf."
+    },
+    {
+      "check": "Ensure password includes at least one upper-case character",
+      "status": "failed",
+      "recommendation": "Configure 'ucredit=-1' in /etc/security/pwquality.conf."
+    },
+    {
+      "check": "Ensure password includes at least one lower-case character",
+      "status": "failed",
+      "recommendation": "Configure 'lcredit=-1' in /etc/security/pwquality.conf."
+    },
+    {
+      "check": "Ensure password includes at least one numeric character",
+      "status": "failed",
+      "recommendation": "Configure 'dcredit=-1' in /etc/security/pwquality.conf."
+    },
+    {
+      "check": "Ensure password includes at least one special character",
+      "status": "failed",
+      "recommendation": "Configure 'ocredit=-1' in /etc/security/pwquality.conf."
+    },
+    {
+      "check": "Ensure change of at least 8 characters when passwords are changed",
+      "status": "failed",
+      "recommendation": "Configure 'difok=8' in /etc/security/pwquality.conf."
+    },
+    {
+      "check": "Ensure maximum number of same consecutive characters in a password is configured",
+      "status": "failed",
+      "recommendation": "Configure 'maxrepeat=3' in /etc/security/pwquality.conf."
+    },
+    {
+      "check": "Ensure preventing the use of dictionary words for passwords is configured",
+      "status": "failed",
+      "recommendation": "Configure 'dictcheck=1' in /etc/security/pwquality.conf."
+    }
+  ]
+}

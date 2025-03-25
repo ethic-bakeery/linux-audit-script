@@ -1,0 +1,29 @@
+{
+  "host_based_firewall_audit": [
+    {
+      "check": "Ensure UFW is installed",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "Ensure iptables-persistent is not installed with UFW",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "Ensure UFW service is enabled",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "Ensure UFW loopback traffic is configured",
+      "status": "failed",
+      "recommendation": "Allow loopback traffic using 'ufw allow in from 127.0.0.0/8'."
+    },
+    {
+      "check": "Ensure UFW default deny firewall policy",
+      "status": "failed",
+      "recommendation": "Set default deny policy using 'ufw default deny incoming'."
+    }
+  ]
+}

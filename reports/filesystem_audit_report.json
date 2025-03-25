@@ -1,0 +1,14 @@
+{
+  "filesystem_audit": [
+    { "check": "Ensure cramfs kernel module is not loaded", "status": "passed", "recommendation": "" },
+    { "check": "Ensure freevxfs kernel module is not loaded", "status": "passed", "recommendation": "" },
+    { "check": "Ensure hfs kernel module is not loaded", "status": "passed", "recommendation": "" },
+    { "check": "Ensure hfsplus kernel module is not loaded", "status": "passed", "recommendation": "" },
+    { "check": "Ensure jffs2 kernel module is not loaded", "status": "passed", "recommendation": "" },
+    { "check": "Ensure overlayfs kernel module is not loaded", "status": "passed", "recommendation": "" },
+    { "check": "Ensure squashfs kernel module is not loaded", "status": "passed", "recommendation": "" },
+    { "check": "Ensure udf kernel module is not loaded", "status": "passed", "recommendation": "" },
+    { "check": "Ensure usb-storage kernel module is not loaded", "status": "passed", "recommendation": "" },
+    { "check": "Ensure sticky bit is set on all world-writable directories", "status": "passed", "recommendation": "" }
+  ]
+}

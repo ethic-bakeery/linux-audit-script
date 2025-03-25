@@ -1,0 +1,20 @@
+{
+  "user_accounts_audit": [
+    {"check": "Ensure PASS_MIN_DAYS is 1 or less", "status": "passed", "recommendation": ""},
+    {"check": "Ensure PASS_MAX_DAYS is 60 or less", "status": "failed", "recommendation": "Set PASS_MAX_DAYS to 60 or lower in /etc/login.defs."},
+    {"check": "Ensure PASS_WARN_AGE is 7 or less", "status": "passed", "recommendation": ""},
+    {"check": "Ensure INACTIVE is 30 or less", "status": "failed", "recommendation": "Set INACTIVE to 30 or lower in /etc/login.defs."},
+    {"check": "Ensure ENCRYPT_METHOD is SHA512", "status": "passed", "recommendation": ""},
+    {"check": "Ensure root account is locked", "status": "passed", "recommendation": ""},
+    {"check": "Ensure system accounts are secured", "status": "failed", "recommendation": "Disable unnecessary system accounts."},
+    {"check": "Ensure default group for the root account is GID 0", "status": "passed", "recommendation": ""},
+    {"check": "Ensure UMASK is 027 or more restrictive", "status": "failed", "recommendation": "Set UMASK to 027 or lower in /etc/profile and /etc/bash.bashrc."},
+    {"check": "Ensure UMASK is 077 or more restrictive", "status": "failed", "recommendation": "Set UMASK to 077 or lower in /etc/profile and /etc/bash.bashrc."},
+    {"check": "Ensure default user shell timeout is 600 seconds or less", "status": "failed", "recommendation": "Set TMOUT to 600 seconds or less in /etc/profile or /etc/bash.bashrc."},
+    {"check": "Ensure nologin is not listed in /etc/shells", "status": "passed", "recommendation": ""},
+    { "check": "Ensure temporary accounts expiration time of 72 hours or less", "status": "manual", "recommendation": "Verify temporary accounts expire in 72 hours or less." },
+    { "check": "Ensure emergency accounts are removed or disabled after 72 hours", "status": "manual", "recommendation": "Manually ensure emergency accounts do not exist beyond 72 hours." },
+    { "check": "Ensure immediate change to a permanent password", "status": "manual", "recommendation": "Ensure temporary passwords are changed immediately to a permanent one." },
+    { "check": "Ensure /etc/ssl/certs only contains authorized certificates", "status": "manual", "recommendation": "Verify /etc/ssl/certs contains only DoD PKI-authorized certificates." }
+  ]
+}

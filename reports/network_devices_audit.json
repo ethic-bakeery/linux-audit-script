@@ -1,0 +1,19 @@
+{
+  "network_devices_audit": [
+    {
+      "check": "Ensure IPv6 status is identified",
+      "status": "Manual",
+      "recommendation": "Review and disable IPv6 if not required using 'sysctl -w net.ipv6.conf.all.disable_ipv6=1' and update /etc/sysctl.conf."
+    },
+    {
+      "check": "Ensure wireless interfaces are disabled",
+      "status": "passed",
+      "recommendation": ""
+    },
+    {
+      "check": "Ensure Bluetooth services are not in use",
+      "status": "passed",
+      "recommendation": ""
+    }
+  ]
+}

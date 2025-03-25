@@ -1,0 +1,16 @@
+{
+  "local_user_group_settings": [
+    {"check": "Ensure accounts in /etc/passwd use shadowed passwords", "status": "passed", "recommendation": ""},
+    {"check": "Ensure /etc/shadow password fields are not empty", "status": "passed", "recommendation": ""},
+    {"check": "Ensure all groups in /etc/passwd exist in /etc/group", "status": "passed", "recommendation": ""},
+    {"check": "Ensure shadow group is empty", "status": "passed", "recommendation": ""},
+    {"check": "Ensure no duplicate UIDs exist", "status": "passed", "recommendation": ""},
+    {"check": "Ensure no duplicate GIDs exist", "status": "passed", "recommendation": ""},
+    {"check": "Ensure no duplicate user names exist", "status": "passed", "recommendation": ""},
+    {"check": "Ensure no duplicate group names exist", "status": "passed", "recommendation": ""},
+    {"check": "Ensure root PATH Integrity", "status": "passed", "recommendation": ""},
+    {"check": "Ensure root is the only UID 0 account", "status": "passed", "recommendation": ""},
+    {"check": "Ensure local interactive user home directories are configured", "status": "failed", "recommendation": "Ensure users have valid home directories using: usermod -d /home/<username> <username>"},
+    {"check": "Ensure local interactive user dot files access is configured", "status": "passed", "recommendation": ""}
+  ]
+}

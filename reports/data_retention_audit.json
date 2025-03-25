@@ -1,0 +1,9 @@
+{
+  "data_retention_audit": [
+    {"check": "Ensure audit log storage size is configured", "status": "passed", "recommendation": ""},
+    {"check": "Ensure audit logs are not automatically deleted", "status": "failed", "recommendation": "Edit /etc/audit/auditd.conf and set 'max_log_file_action = keep_logs', then restart auditd."},
+    {"check": "Ensure system is disabled when audit logs are full", "status": "failed", "recommendation": "Edit /etc/audit/auditd.conf and set 'space_left_action = email' and 'admin_space_left_action = halt', then restart auditd."},
+    {"check": "Ensure shut down by default upon audit failure", "status": "failed", "recommendation": "Edit /etc/audit/auditd.conf and set 'disk_full_action = halt', then restart auditd."},
+    {"check": "Ensure audit event multiplexor is configured to off-load audit logs", "status": "failed", "recommendation": "Edit /etc/audit/auditd.conf and set 'dispatcher = /sbin/audispd', then restart auditd."}
+  ]
+}
