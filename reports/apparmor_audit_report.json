@@ -1,5 +1,5 @@
 {
-  "generated_on": "Mon Mar 17 11:30:09 PM IST 2025",
+  "generated_on": "Tue Mar 25 02:52:06 PM IST 2025",
   "audit_results": {
     "mandatory_access_control": [
       {"check": "AppArmor Installed", "status": "passed", "recommendation": "None" },

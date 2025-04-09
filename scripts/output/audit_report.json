@@ -1,0 +1,8 @@
+{
+  "audit_results": [
+    {
+      "check": "*.sh",
+      "status": "SKIPPED - Not executable"
+    }
+  ]
+}
